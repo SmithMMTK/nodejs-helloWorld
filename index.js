@@ -22,6 +22,7 @@ const router = express.Router();
 app.get('/', function (req, res) {
     let currentDate = new Date();
     
+    
     return res.send(`Hello World! Current date and time is: ${currentDate}`);
 })
 
