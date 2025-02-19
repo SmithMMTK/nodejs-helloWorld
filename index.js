@@ -18,9 +18,11 @@ const app = express();
 // Configure routes
 const router = express.Router();
 
-// Hello World for index page
+// Hello World for index page and echo current date and time
 app.get('/', function (req, res) {
-    return res.send("Hello World!");
+    let currentDate = new Date();
+    
+    return res.send(`Hello World! Current date and time is: ${currentDate}`);
 })
 
 // ***************************************************************************
